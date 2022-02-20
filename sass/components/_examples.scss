@@ -1,0 +1,38 @@
+.examples {
+  padding-top: 0;
+}
+.examples__title {
+  margin-bottom: 50px;
+}
+.examples-list {
+  position: relative;
+  display: flex;
+}
+.eexamples-list__item:nth-last-child(n + 2) {
+  margin-right: var(--primary-margin-number);
+}
+.examples-list__item {
+  position: relative;
+}
+.examples-list__item::before {
+  position: absolute;
+  content: '';
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}
+.examples-list__text {
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(14 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  bottom: 27px;
+  right: 50%;
+  transform: translate(50%);
+  white-space: nowrap;
+}
